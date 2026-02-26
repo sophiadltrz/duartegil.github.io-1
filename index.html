@@ -2,67 +2,45 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mon Site - Gil</title>
+    <title>Accueil - Gil</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav>
-        <a href="#accueil">Accueil</a>
-        <a href="#production">Production scolaire</a>
-        <a href="#videos">Mes vidéos</a>
-        <a href="#passions">Mes passions</a>
-        <a href="#site-reve">Mon site de rêve</a>
+        <a href="index.html">Accueil</a>
+        <a href="production.html">Production scolaire</a>
+        <a href="videos.html">Mes vidéos</a>
+        <a href="passions.html">Mes passions</a>
+        <a href="site-reve.html">Mon site de rêve</a>
     </nav>
 
-    <section id="accueil">
-        <h1>Bienvenue sur le site de Gil</h1>
-        <img src="avatar.jpg" alt="Avatar de Gil" class="avatar">
-        <p>Je m'appelle Gil. J'adore le football, la PlayStation et voyager. Bienvenue sur mon site personnel !</p>
-        
-        <h3>🎵 Musique d'ambiance</h3>
-        <audio id="bg-music">
-            <source src="musique.mp3" type="audio/mpeg">
-        </audio>
-        <button onclick="document.getElementById('bg-music').play()">▶️ Jouer</button>
-        <button onclick="document.getElementById('bg-music').pause()">⏸️ Pause</button>
-    </section>
+    <main>
+        <section class="presentation">
+            <h1>🌸 Bienvenue sur mon site 🌸</h1>
+            
+            <img src="avatar.jpg" alt="Avatar de Gil" class="avatar">
 
-    <section id="production">
-        <h1>📚 Production scolaire</h1>
-        <p>Voici le padlet réalisé en groupe sur "Boule de Suif" :</p>
-        <a href="https://sctourcoing-my.sharepoint.com/..." class="link-gold">Voir mon Padlet</a>
-    </section>
+            <h3>Présentation</h3>
+            <p>Bonjour ! Je m'appelle Gil.</p>
+            <p>Passionné par le football, la PlayStation et les voyages. Ce site est mon projet pour partager mon univers et mes créations personnelles.</p>
+            <p>J'ai choisi un design sobre et esthétique pour refléter ma personnalité.</p>
 
-    <section id="videos">
-        <h1>🎬 Mes vidéos</h1>
-        <video width="400" controls>
-            <source src="video.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas la vidéo.
-        </video>
-    </section>
+            <div class="musique-box">
+                <h3>🎵 Musique d'ambiance</h3>
+                <audio id="bg-music">
+                    <source src="musique.mp3" type="audio/mpeg">
+                </audio>
+                <button onclick="document.getElementById('bg-music').play()">▶️ Jouer</button>
+                <button onclick="document.getElementById('bg-music').pause()">⏸️ Pause</button>
+            </div>
 
-    <section id="passions">
-        <h1>⚽ Mes passions</h1>
-        <h3>Football</h3>
-        <p>J'adore jouer au foot et regarder les matchs.</p>
-        <img src="pied.jpg" alt="Football">
-
-        <h3>PlayStation</h3>
-        <p>J'aime jouer à la Play avec mes amis.</p>
-        <img src="jouer.jpg" alt="PS5">
-    </section>
-
-    <section id="site-reve">
-        <h1>🌍 Mon site de rêve</h1>
-        <h3>Voyages : Portugal et Brésil</h3>
-        <img src="Portugal.jpg" alt="Portugal">
-        <img src="brésil.jpg" alt="Brésil">
-        
-        <h3>Joueur préféré : Cristiano Ronaldo</h3>
-        <img src="ronaldo.jpg" alt="CR7">
-    </section>
+            <div class="deco-image">
+                <img src="plage.jpg" alt="Plage" class="img-border">
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>
